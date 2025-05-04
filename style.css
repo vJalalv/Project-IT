@@ -1,95 +1,128 @@
-div {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-image: url(image.jpg);
-    background-size: cover;
+:root{
+  --text-color:#fff ;}
+  :root{
+    --text-color:#000;
+    --navbar-bg:#fff;
+  }
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .switcher{
+    position: fixed;
+    top: 15%;
+    left: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
     flex-direction: column;
-}
-
-body.dark-mode {
-    background-color: #333;
-    color: white;
-    background-image: url(Dark\ 3.jpg);
-}
-
-.signup-container {
-    background-color: rgba(255, 255, 255, 0.839);
-    margin: auto;
-    padding: 30px;
-    border-radius: 10px;
-    width: 500px;
-    border: 1px solid #ccc;
-    margin-top: 100px;
-}
-
-.signup-container.dark-mode {
-    background-color: rgba(50, 50, 50, 0.9);
-}
-
-.signup-container h2 {
-    color: black;
-}
-
-.signup-container label {
-    display: block;
-    text-align: left;
-    margin: 10px 0 5px 20px;
-    font-weight: bold;
-    font-size: 17px;
-    color: #333;
-    line-height: 2;
-}
-
-body.dark-mode .signup-container label,
-body.dark-mode .signup-container h2 {
-    color: white;
-}
-
-.signup-container input {
-    width: 90%;
-    padding: 10px;
-    margin: 5px auto 20px auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: block;
-    box-shadow: 0 0 5px #555;
-}
-
-.signup-container button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    z-index: 1000;
+    transform: translateY(-50%);
+  }
+  .switcher button{
+    width: 50px;
+    height: 50px;
     border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: system-ui;
+    background-image: url(ll.jpg);
+    background-repeat: repeat;
+    color: var(--text-color);
+  }
+  a{
+    text-decoration: none;
+    color:var(--text-color);
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+  }
+  header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    color:var(--text-color);
+  }
+  header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  header ul li{
+    margin-right: 20px;
+
+  }
+  header ul li a{
+    padding: 4px 13px;
+    border-radius: 15px;
+    color:var(--text-color);
+  }
+  header ul li a:hover,.active{
+    background:var(--text-color);
+    color:var(--navbar-bg);
+  }
+  .center-image {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .center-image img {
+    max-width: 80%;
+    height:auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  .destinations {
+    padding: 50px 30px;
+    text-align: center;
+    color:var(--text-color);
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 30px;
+  }
+  
+  .card img {
+    width: 130%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .card p{
+    font-size: 20px;
+    color:var(--text-color);
     margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.signup-container button:hover {
-    background-color: green;
-}
-
-#toggle-theme {
-    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .content{
+    color:var(--text-color);
+    text-align: center;
+    font-size:25px;
+    font-style: italic;
+    font-variant: inherit;
+  }
+  .btn{
+  margin-left: 610px;
+  margin-top: 50px;
     padding: 10px 20px;
+    background-color: #0066ff;
+    color:var(--text-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
 
-#toggle-theme.dark-mode {
-    background-color: #444;
-    color: white;
-}
-
-#password-strength {
-    color: red;
-}
