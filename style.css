@@ -1,0 +1,95 @@
+div {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(image.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+    background-image: url(Dark\ 3.jpg);
+}
+
+.signup-container {
+    background-color: rgba(255, 255, 255, 0.839);
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+    margin-top: 100px;
+}
+
+.signup-container.dark-mode {
+    background-color: rgba(50, 50, 50, 0.9);
+}
+
+.signup-container h2 {
+    color: black;
+}
+
+.signup-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px 20px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #333;
+    line-height: 2;
+}
+
+body.dark-mode .signup-container label,
+body.dark-mode .signup-container h2 {
+    color: white;
+}
+
+.signup-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px auto 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 0 5px #555;
+}
+
+.signup-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup-container button:hover {
+    background-color: green;
+}
+
+#toggle-theme {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-theme.dark-mode {
+    background-color: #444;
+    color: white;
+}
+
+#password-strength {
+    color: red;
+}
