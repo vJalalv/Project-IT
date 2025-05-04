@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="profile-card">
+    <h2 id="username">User Name</h2>
+    <p>Email: <span id="useremail"></span></p>
+    <p>Phone: <span id="userphone"></span></p>
+    <p>Address: <span id="useraddress"></span></p>
+    <button onclick="editProfile()">Edit Profile</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <h3>Your Previous Bookings</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Booking ID</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="bookingTable"></tbody>
+  </table>
+
+  <button class="delete-btn" onclick="deleteAccount()">Delete Account</button>
+
+  <script src="profile.js"></script>
+</body>
+</html>
