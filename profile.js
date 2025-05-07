@@ -1,4 +1,4 @@
-// Load user data from localStorage
+
 window.onload = function () {
     document.getElementById('username').textContent = localStorage.getItem('username') || 'User Name';
     document.getElementById('useremail').textContent = localStorage.getItem('useremail') || 'example@example.com';
@@ -17,8 +17,6 @@ window.onload = function () {
       bookingTable.innerHTML += row;
     });
   };
-  
-  // Edit Profile (simulate)
   function editProfile() {
     let name = prompt('Enter your name:', localStorage.getItem('username'));
     let email = prompt('Enter your email:', localStorage.getItem('useremail'));
@@ -31,11 +29,8 @@ window.onload = function () {
     localStorage.setItem('useraddress', address);
     location.reload();
   }
-  
-  // Logout (simulate)
   function logout() {
     alert('You have logged out.');
-    // ممكن نرجع لصفحة login مثلا
   }
   
   // Delete account
