@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <table width="100%">
+            <tr>
+                <td style="text-align: left;">
+                    <a href="home.html" target="_blank" id="lin">home page</a>
+                </td> 
+                <td style="text-align: center;">
+                    <div class="logo">Sky Airlines</div>
+                </td>
+                <td style="width:33%"></td>
+            </tr>
+        </table>
+
+
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Book Your Flight</h2>
+            <form id="bookingform" method="get" action="#" onsubmit="return validateDates()">
+                <div class="form-group">
+                    <label>Flight Destination</label>
+                     <select name="country" id="destination" required >
+                        <option>Paris</option>
+                        <option>Rome</option>
+                        <option>London</option>
+                        <option>Tokyo</option>
+                        <option>Cairo</option>
+                        <option>Dubai</option>
+                        <option>Makkah</option>
+                        <option>Berlin</option>
+                        <option>Seoul</option>
+                        <option>Washington</option>
+                     </select>
+                </div>
+
+                <div class="form-group">
+                     <label>Ticket Category</label>
+                    <select name="ticket" id="ticket" required>
+                        <option>Economy Class</option>
+                        <option>First Class</option>
+                        <option>Business Class</option>
+                        <option>Premium Economy Class</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Departure:</label>
+                    <input type="date" name="travel_date" id="dep" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Return:</label>
+                    <input type="date" name="arrival_date" id="ret" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Passengers:</label>
+                    <select name="adults_num" id="passengers" required>
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>3 Adults</option>
+                    </select>
+                </div>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Sky Airlines</p>
+    </footer>
+    <script src="booking.js"></script>
+</body>
+</html>
