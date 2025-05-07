@@ -1,0 +1,137 @@
+body{
+    background-color: burlywood;
+    margin: 0;
+    padding: 20px;
+
+}
+body.dark{
+    background-color: rgb(141, 105, 57);
+    margin: 0;
+    padding: 20px;
+    color: white;
+
+}
+body.dark .trip {
+    background-color:burlywood;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+body.dark .text{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.theme{
+    display: flex;
+    padding: 20px;
+}
+.theme button {
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.theme button:hover {
+    transform: scale(1.2);
+}
+body.dark .theme button {
+    color: #fff;
+}
+
+.container{
+    font-size: 5ex;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.image-text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.text{
+    font-size: 24px;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+
+}
+.button{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+.book-now{
+    display: inline-block;
+    background-color: blue;
+    color:white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: left;
+    width: fit-content;
+}
+.book-now:hover{
+    background-color: black;
+    color: white;
+}
+.image{
+    width: 350px;
+    height: 350px;
+}
+.text-container{
+    margin-right: 10px;
+}
+.container-two{
+    font-size: 4ex;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.trip{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border-radius: 50px;
+    margin: 20px auto; 
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.search input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.search button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search button:hover {
+    background-color:black
+}
