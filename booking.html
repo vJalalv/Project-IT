@@ -11,7 +11,7 @@
         <table width="100%">
             <tr>
                 <td style="text-align: left;">
-                    <a href="index.html" target="_blank" id="lin">home page</a>
+                    <a href="home.html" target="_blank" id="lin">home page</a>
                 </td> 
                 <td style="text-align: center;">
                     <div class="logo">Sky Airlines</div>
@@ -26,15 +26,31 @@
     <main>
         <section class="booking-form">
             <h2>Book Your Flight</h2>
-            <form method="get" action="#" onsubmit="return validateDates()">
+            <form id="bookingform" method="get" action="#" onsubmit="return validateDates()">
                 <div class="form-group">
-                    <label>From:</label>
-                    <input type="text" placeholder="City or Airport" name="travel_count" required>
+                    <label>Flight Destination</label>
+                     <select name="country" id="destination" required >
+                        <option>Paris</option>
+                        <option>Rome</option>
+                        <option>London</option>
+                        <option>Tokyo</option>
+                        <option>Cairo</option>
+                        <option>Dubai</option>
+                        <option>Makkah</option>
+                        <option>Berlin</option>
+                        <option>Seoul</option>
+                        <option>Washington</option>
+                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label>To:</label>
-                    <input type="text" placeholder="City or Airport" name="arrival_count" required>
+                     <label>Ticket Category</label>
+                    <select name="ticket" id="ticket" required>
+                        <option>Economy Class</option>
+                        <option>First Class</option>
+                        <option>Business Class</option>
+                        <option>Premium Economy Class</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -49,7 +65,7 @@
 
                 <div class="form-group">
                     <label>Passengers:</label>
-                    <select name="adults_num" required>
+                    <select name="adults_num" id="passengers" required>
                         <option>1 Adult</option>
                         <option>2 Adults</option>
                         <option>3 Adults</option>
