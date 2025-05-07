@@ -1,9 +1,9 @@
 
 window.onload = function () {
-    document.getElementById('username').textContent = localStorage.getItem('username') || 'User Name';
-    document.getElementById('useremail').textContent = localStorage.getItem('useremail') || 'example@example.com';
-    document.getElementById('userphone').textContent = localStorage.getItem('userphone') || '0000000000';
-    document.getElementById('useraddress').textContent = localStorage.getItem('useraddress') || 'City, Country';
+    document.getElementById('username').textContent = localStorage.getItem('username');
+    document.getElementById('useremail').textContent = localStorage.getItem('useremail');
+    document.getElementById('userphone').textContent = localStorage.getItem('userphone');
+    document.getElementById('useraddress').textContent = localStorage.getItem('useraddress');
   
     let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
     let bookingTable = document.getElementById('bookingTable');
@@ -11,7 +11,9 @@ window.onload = function () {
       let row = `<tr>
         <td>${b.id}</td>
         <td>${b.destination}</td>
-        <td>${b.date}</td>
+        <td>From${b.depaturedate} to ${b.returnDate}</td>
+        <td>${b.ticket}</td>
+        <td>${b.passengers}</td>
         <td>${b.status}</td>
       </tr>`;
       bookingTable.innerHTML += row;
@@ -31,9 +33,8 @@ window.onload = function () {
   }
   function logout() {
     alert('You have logged out.');
+    window.location.href='login.html';
   }
-  
-  // Delete account
   function deleteAccount() {
     if (confirm('Are you sure you want to delete your account?')) {
       localStorage.clear();
