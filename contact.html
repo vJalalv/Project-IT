@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="master.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="contact.css">
 
-  <title>Contact Us | Helwan Sky</title>
+
+  <title>Contact Us | SkyTravel</title>
 <body>
   <div class="top">
     <h1>Contact us</h1>
@@ -15,7 +15,7 @@
     <h2>Get in touch</h2>
 
       <div class="m-circle">
-        <div class="office">
+        <div class="map">
           <i class="fas fa-map-marker-alt"></i>
         </div>
         <div class="m-text">
@@ -23,7 +23,7 @@
            <strong>Our Office</strong><br>
             10 Helwan street<br>
             cs college, Floor 2<br>
-            Helwan Universty
+            Helwan universty
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@
     <div class="m-circle">
       <div class="email">
         <i class="fas fa-envelope"></i>
-      </div>
+      </div>+
       <div class="m-text">
         <strong>Email Us</strong><br>
       <span class="m-span1">General:</span> <a href="mailto:info@helwansky.com">info@helwansky.com</a><br>
@@ -74,25 +74,26 @@
   </div>
   <div class="right">
     <h2>Send us a message</h2>
-    <form>
+
+    <form novalidate onsubmit="saveMessage(); return validateForm();">
       <label>Your Name</label>
-      <input type="text" placeholder="Your Name" required>
+      <input type="text" id="name" placeholder="Your Name" required>
 
 
-  <label>Email Address</label>
-  <input type="email" placeholder="Email Address" required>
+      <label>Email Address</label>
+      <input type="email" id="email" placeholder="Email Address" required>
 
-  <label>Subject</label>
-  <input type="text" placeholder="Subject">
+      <label>Phone Number</label>
+      <input type="text" id="phone" placeholder="Phone Number">
 
-  <label>Message</label>
-  <textarea rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+      <label>Message</label>
+      <textarea rows="6" id="message" placeholder="Please provide details about your inquiry..." required></textarea>
 
-  <button type="submit">Send Message</button>
-</form>
-
+      <button type="submit">Send Message</button>
+    </form>
 
   </div>
 
+  <script src="contact.js"></script>
 </body>
 </html>
