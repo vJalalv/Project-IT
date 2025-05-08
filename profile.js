@@ -33,7 +33,7 @@ window.onload = function () {
   }
   function logout() {
     alert('You have logged out.');
-    window.location.href='login.html';
+    window.location.href='proj.html';
   }
   function deleteAccount() {
     if (confirm('Are you sure you want to delete your account?')) {
