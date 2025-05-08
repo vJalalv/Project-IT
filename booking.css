@@ -8,9 +8,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.zoz{
+    border-color: burlywood ;
+}
 header {
-    background-color: #074384;
     color: white;
     padding: 15px;
     text-align: center;
@@ -18,7 +19,10 @@ header {
 }
 #lin {
     color: white;
-     font-weight: bold;
+    font-weight: bold;
+    font-size: xx-large;
+    text-decoration: none;
+
 }
 #lin:hover{
     color: black;
@@ -31,6 +35,7 @@ color: hotpink;
 .logo {
     font-size: 24px;
     font-weight: bold;
+    color: black;
 }
 
 
@@ -77,6 +82,7 @@ button {
     border: none;
     border-radius: 40px;
     font-size: 16px;
+    margin-top: 13px;
     
 }
 
@@ -85,11 +91,4 @@ button:hover {
 }
 
 
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #074384;
-    color: white;
-    width: 100%;
-    margin: 100px 0px 0px;
-}
+
