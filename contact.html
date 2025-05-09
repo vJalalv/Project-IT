@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="contact.css">
+  <link href="contact.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <title>Contact Us</title>
 <body>
   <div class="top">
@@ -13,7 +15,7 @@
     <h2>Get in touch</h2>
 
       <div class="m-circle">
-        <div class="map">
+        <div class="office">
           <i class="fas fa-map-marker-alt"></i>
         </div>
         <div class="m-text">
@@ -43,7 +45,7 @@
     <div class="m-circle">
       <div class="email">
         <i class="fas fa-envelope"></i>
-      </div>+
+      </div>
       <div class="m-text">
         <strong>Email Us</strong><br>
       <span class="m-span1">General:</span> <a href="mailto:info@helwansky.com">info@helwansky.com</a><br>
@@ -72,26 +74,25 @@
   </div>
   <div class="right">
     <h2>Send us a message</h2>
-
-    <form novalidate onsubmit="saveMessage(); return validateForm();">
+    <form>
       <label>Your Name</label>
-      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" placeholder="Your Name" required>
 
 
-      <label>Email Address</label>
-      <input type="email" id="email" placeholder="Email Address" required>
+  <label>Email Address</label>
+  <input type="email" placeholder="Email Address" required>
 
-      <label>Phone Number</label>
-      <input type="text" id="phone" placeholder="Phone Number">
+  <label>Subject</label>
+  <input type="text" placeholder="Subject">
 
-      <label>Message</label>
-      <textarea rows="6" id="message" placeholder="Please provide details about your inquiry..." required></textarea>
+  <label>Message</label>
+  <textarea rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
+  <button type="submit">Send Message</button>
+</form>
+
 
   </div>
 
-  <script src="contact.js"></script>
 </body>
 </html>
