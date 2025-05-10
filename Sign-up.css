@@ -12,12 +12,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: all 0.5s ease;
 }
 
 body.dark-mode {
     background-color: #333;
     color: white;
     background-image: url(Dark\ 3.jpg);
+    transition: all 0.5s ease;
 }
 
 .signup-container {
@@ -28,10 +30,12 @@ body.dark-mode {
     width: 500px;
     border: 1px solid #ccc;
     margin-top: 100px;
+    transition: all 0.5s ease;
 }
 
 .signup-container.dark-mode {
     background-color: rgba(50, 50, 50, 0.9);
+    transition: all 0.5s ease;
 }
 
 .signup-container h2 {
@@ -88,8 +92,4 @@ body.dark-mode .signup-container h2 {
 #toggle-theme.dark-mode {
     background-color: #444;
     color: white;
-}
-
-#password-strength {
-    color: red;
 }
