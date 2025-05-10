@@ -25,22 +25,22 @@ form.addEventListener("submit", function(e) {
         hasError = true;
     }
 
-    if (!nameRegex.test(fullName.value)) {
+    else if (!nameRegex.test(fullName.value)) {
         alert("Full name must be in English letters only.");
         hasError = true;
     }
 
-    if (!emailRegex.test(email.value)) {
+    else if (!emailRegex.test(email.value)) {
         alert("Please enter a valid email address.");
         hasError = true;
     }
 
-    if (password.value.length < 6) {
+    else if (password.value.length < 6) {
         alert("Password must be at least 6 characters.");
         hasError = true;
     }
 
-    if (password.value !== confirmPassword.value) {
+    else if (password.value !== confirmPassword.value) {
         alert("Passwords don't match.");
         hasError = true;
     }
@@ -67,7 +67,6 @@ function saveUserData() {
     var name = document.getElementById("fullname").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
-    var address = "Your address";  // لو عايز تضيف خانة للعنوان في الفورم، ضيفها هناك
 
     localStorage.setItem('username', name);
     localStorage.setItem('useremail', email);
@@ -75,5 +74,5 @@ function saveUserData() {
     localStorage.setItem('useraddress', address);
 
     alert("Data saved successfully.");
-    window.location.href = "profile.html"; // التأكد من التوجيه بعد حفظ البيانات
+    window.location.href = "profile.html"; 
 }
