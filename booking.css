@@ -7,9 +7,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.zoz{
-    border-color: burlywood ;
-}
 header {
     color: white;
     padding: 15px;
@@ -17,43 +14,21 @@ header {
     width:100%;
 }
 #lin {
-    color: white;
     font-weight: bold;
     font-size: xx-large;
     text-decoration: none;
-
 }
-#lin:hover{
-    color: black;
-    }
-
-#lin:active{
-color: hotpink;
-}
-
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: black;
 }
-
-
 .booking-form {
-    background: rgba(134, 30, 30, 0);
     width: 90%;
     max-width: 500px;
     margin: 80px auto;
     padding: 20px;
-    border-radius: 8px;
-    
 }
-
-.booking-form h2 {
-    text-align: center;
-    color: black;
-    margin-bottom: 20px;
-}
-
 .form-group {
     margin-bottom: 15px;
 }
