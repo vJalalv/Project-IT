@@ -113,16 +113,13 @@
     font-variant: inherit;
   }
   .btn{
-  margin-left: 610px;
-  margin-top: 50px;
+  margin: 50px auto;
     padding: 10px 20px;
     background-color: #0066ff;
     color:var(--text-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: fit-content;
   }
-
