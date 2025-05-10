@@ -17,8 +17,3 @@ function validateForm() {
   alert("Your message has been sent successfully.");
   return true;
 }
-
-function saveMessage() {
-  let message = document.getElementById("message").value.trim();
-  localStorage.setItem("lastMessage", message);
-}
