@@ -48,6 +48,7 @@ form.addEventListener("submit", function(e) {
     if (hasError) {
         e.preventDefault();
     } else {
+        alert("Data saved successfully");
         saveUserData();
     }
 });
