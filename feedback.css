@@ -21,7 +21,7 @@ p {
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.9); /* شفافية بسيطة عشان النص يبان */
+  background-color: rgba(255, 255, 255, 0.9); 
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
