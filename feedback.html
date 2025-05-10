@@ -15,22 +15,22 @@
 
   <form action="home.html" method="get">
     <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" size="30"><br><br>
+    <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
 
     <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" size="30"><br><br>
+    <input type="email" id="email" name="email" placeholder="Valid Email"><br><br>
 
-    <label for="phone">Phone:</label><br>
-    <input type="tel" id="phone" name="phone" size="30"><br><br>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
 
     <label for="booking">Booking Number:</label><br>
-    <input type="text" id="booking" name="booking" size="30"><br><br>
+    <input type="text" id="booking" name="booking" placeholder="Booking number"><br><br>
 
     <label for="rate">Your rate out of 10:</label><br>
     <input type="number" id="rate" name="rate" min="1" max="10"><br><br>
 
     <label for="comments">Any comments:</label><br>
-    <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+    <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Any comments"></textarea><br><br>
 
     <input type="submit" value="Submit">
   </form>
@@ -44,15 +44,46 @@
       const booking = document.getElementById("booking").value.trim();
       const rate = document.getElementById("rate").value.trim();
   
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phonePattern = /^(01)[0-9]{9}$/;
+  
+      
       if (!name || !email || !phone || !booking || !rate) {
-        alert("Please fill in all required information!");
-        e.preventDefault(); // يمنع إرسال النموذج
-      } else {
-        alert("Thanks for your feedback! 😊");
+        alert("Please fill in all required fields.");
+        e.preventDefault();
+        return;
       }
+  
+      
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        e.preventDefault();
+        return;
+      }
+  
+      
+      if (!phonePattern.test(phone)) {
+        alert("Please enter a valid Egyptian phone number (e.g., 01234567890).");
+        e.preventDefault();
+        return;
+      }
+  
+      
+      if (rate < 1 || rate > 10) {
+        alert("Rate must be between 1 and 10.");
+        e.preventDefault();
+        return;
+      }
+  
+      alert("Thanks for your feedback! 😊");
     });
   </script>
+  
+  
+  
   
 </body>
 
 </html>
+
+   
