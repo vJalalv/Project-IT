@@ -10,7 +10,7 @@ window.onload = function () {
       let row = `<tr>
         <td>${b.id}</td>
         <td>${b.destination}</td>
-        <td> From ${b.depatureDate} to ${b.returnDate}</td>
+        <td> From ${b.departureDate} to ${b.returnDate}</td>
         <td>${b.ticket}</td>
         <td>${b.passengers}</td>
         <td>${b.status}</td>
