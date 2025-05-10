@@ -3,7 +3,6 @@ window.onload = function () {
     document.getElementById('username').textContent = localStorage.getItem('username');
     document.getElementById('useremail').textContent = localStorage.getItem('useremail');
     document.getElementById('userphone').textContent = localStorage.getItem('userphone');
-    document.getElementById('useraddress').textContent = localStorage.getItem('useraddress');
   
     let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
     let bookingTable = document.getElementById('bookingTable');
@@ -23,12 +22,10 @@ window.onload = function () {
     let name = prompt('Enter your name:', localStorage.getItem('username'));
     let email = prompt('Enter your email:', localStorage.getItem('useremail'));
     let phone = prompt('Enter your phone:', localStorage.getItem('userphone'));
-    let address = prompt('Enter your address:', localStorage.getItem('useraddress'));
   
     localStorage.setItem('username', name);
     localStorage.setItem('useremail', email);
     localStorage.setItem('userphone', phone);
-    localStorage.setItem('useraddress', address);
     location.reload();
   }
   function logout() {
