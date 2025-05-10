@@ -14,7 +14,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      transition: background-image 0.5s ease, color 0.3s ease;
+      transition: 0.5s ease, color 0.3s ease;
     }
 
     .login-container {
@@ -24,7 +24,7 @@
       box-shadow: 0 8px 16px rgba(0,0,0,0.3);
       width: 350px;
       text-align: center;
-      transition: background 0.3s ease;
+      transition: 0.3s ease;
     }
 
     h2 {
@@ -40,6 +40,7 @@
       text-align: left;
       color: #333;
     }
+    
 
     input[type="email"],
     input[type="password"] {
@@ -83,21 +84,27 @@
   <script>
     document.body.style.backgroundImage = "url('plan.jpg')"; 
 
-    function toggleTheme() {
-      const currentTheme = document.body.style.backgroundImage;
-      const container = document.querySelector('.login-container');
+   function toggleTheme() {
+  const currentTheme = document.body.style.backgroundImage;
+  const container = document.querySelector('.login-container');
 
-      if (currentTheme.includes('plan.jpg')) {
-        document.body.style.backgroundImage = "url('dark.jpg')"; 
-        document.body.style.color = "white";
-        container.style.background = "rgba(0, 0, 0, 9.8)";
-      } else {
-        
-        document.body.style.backgroundImage = "url('plan.jpg')"; 
-        document.body.style.color = "black";
-        container.style.background = "rgba(255, 255, 255, 0.9)";
-      }
-    }
+  if (currentTheme.includes('plan.jpg')) {
+    document.body.style.backgroundImage = "url('dark.jpg')"; 
+    document.body.style.color = "white";
+    container.style.background = "rgba(0, 0, 0, 0.9)";
+
+    document.querySelector('h2').style.color = 'white';
+    document.querySelectorAll('label').forEach(label => label.style.color = 'white');
+
+  } else {
+    document.body.style.backgroundImage = "url('plan.jpg')"; 
+    document.body.style.color = "black";
+    container.style.background = "rgba(255, 255, 255, 0.9)";
+
+    document.querySelector('h2').style.color = '#003366';
+    document.querySelectorAll('label').forEach(label => label.style.color = '#333');
+  }
+}
 
   
     function validateForm() {
